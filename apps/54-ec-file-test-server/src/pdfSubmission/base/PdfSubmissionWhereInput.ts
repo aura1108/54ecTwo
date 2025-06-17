@@ -49,6 +49,17 @@ class PdfSubmissionWhereInput {
     nullable: true,
   })
   pdf2?: StringFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringFilter,
+  })
+  @Type(() => StringFilter)
+  @IsOptional()
+  @Field(() => StringFilter, {
+    nullable: true,
+  })
+  userId?: StringFilter;
 }
 
 export { PdfSubmissionWhereInput as PdfSubmissionWhereInput };

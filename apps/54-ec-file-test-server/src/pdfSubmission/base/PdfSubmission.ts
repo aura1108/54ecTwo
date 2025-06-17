@@ -57,6 +57,15 @@ class PdfSubmission {
   @Type(() => Date)
   @Field(() => Date)
   updatedAt!: Date;
+
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @MaxLength(1000)
+  @Field(() => String)
+  userId!: string;
 }
 
 export { PdfSubmission as PdfSubmission };

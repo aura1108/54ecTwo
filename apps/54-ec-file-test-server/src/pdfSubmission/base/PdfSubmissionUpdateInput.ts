@@ -38,6 +38,18 @@ class PdfSubmissionUpdateInput {
     nullable: true,
   })
   pdf2?: string;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @MaxLength(1000)
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  userId?: string;
 }
 
 export { PdfSubmissionUpdateInput as PdfSubmissionUpdateInput };

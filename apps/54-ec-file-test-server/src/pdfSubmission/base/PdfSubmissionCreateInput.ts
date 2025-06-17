@@ -32,6 +32,15 @@ class PdfSubmissionCreateInput {
   @MaxLength(1000)
   @Field(() => String)
   pdf2!: string;
+
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @MaxLength(1000)
+  @Field(() => String)
+  userId!: string;
 }
 
 export { PdfSubmissionCreateInput as PdfSubmissionCreateInput };

@@ -23,6 +23,7 @@ const CREATE_INPUT = {
   pdf1: "examplePdf1",
   pdf2: "examplePdf2",
   updatedAt: new Date(),
+  userId: "exampleUserId",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
@@ -30,6 +31,7 @@ const CREATE_RESULT = {
   pdf1: "examplePdf1",
   pdf2: "examplePdf2",
   updatedAt: new Date(),
+  userId: "exampleUserId",
 };
 const FIND_MANY_RESULT = [
   {
@@ -38,6 +40,7 @@ const FIND_MANY_RESULT = [
     pdf1: "examplePdf1",
     pdf2: "examplePdf2",
     updatedAt: new Date(),
+    userId: "exampleUserId",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -46,6 +49,7 @@ const FIND_ONE_RESULT = {
   pdf1: "examplePdf1",
   pdf2: "examplePdf2",
   updatedAt: new Date(),
+  userId: "exampleUserId",
 };
 
 const service = {

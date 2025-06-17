@@ -38,6 +38,7 @@ export class PdfSubmissionControllerBase {
         pdf1: true,
         pdf2: true,
         updatedAt: true,
+        userId: true,
       },
     });
   }
@@ -57,6 +58,7 @@ export class PdfSubmissionControllerBase {
         pdf1: true,
         pdf2: true,
         updatedAt: true,
+        userId: true,
       },
     });
   }
@@ -75,6 +77,7 @@ export class PdfSubmissionControllerBase {
         pdf1: true,
         pdf2: true,
         updatedAt: true,
+        userId: true,
       },
     });
     if (result === null) {
@@ -102,6 +105,7 @@ export class PdfSubmissionControllerBase {
           pdf1: true,
           pdf2: true,
           updatedAt: true,
+          userId: true,
         },
       });
     } catch (error) {
@@ -129,6 +133,7 @@ export class PdfSubmissionControllerBase {
           pdf1: true,
           pdf2: true,
           updatedAt: true,
+          userId: true,
         },
       });
     } catch (error) {

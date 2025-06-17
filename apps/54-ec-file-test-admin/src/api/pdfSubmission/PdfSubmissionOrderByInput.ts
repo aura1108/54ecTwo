@@ -6,4 +6,5 @@ export type PdfSubmissionOrderByInput = {
   pdf1?: SortOrder;
   pdf2?: SortOrder;
   updatedAt?: SortOrder;
+  userId?: SortOrder;
 };
