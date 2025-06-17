@@ -7,6 +7,7 @@ export const PdfSubmissionCreate = (props: CreateProps): React.ReactElement => {
       <SimpleForm>
         <TextInput label="pdf1" source="pdf1" />
         <TextInput label="pdf2" source="pdf2" />
+        <TextInput label="userId" source="userId" />
       </SimpleForm>
     </Create>
   );

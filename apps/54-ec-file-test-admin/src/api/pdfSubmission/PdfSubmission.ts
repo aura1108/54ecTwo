@@ -4,4 +4,5 @@ export type PdfSubmission = {
   pdf1: string;
   pdf2: string;
   updatedAt: Date;
+  userId: string;
 };

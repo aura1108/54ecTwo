@@ -13,4 +13,5 @@ model PdfSubmission {
   pdf1      String
   pdf2      String
   updatedAt DateTime @updatedAt
+  userId    String   @unique
 }

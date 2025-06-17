@@ -16,6 +16,7 @@ export const PdfSubmissionShow = (props: ShowProps): React.ReactElement => {
         <TextField label="pdf1" source="pdf1" />
         <TextField label="pdf2" source="pdf2" />
         <DateField source="updatedAt" label="Updated At" />
+        <TextField label="userId" source="userId" />
       </SimpleShowLayout>
     </Show>
   );

@@ -15,7 +15,8 @@ export const PdfSubmissionList = (props: ListProps): React.ReactElement => {
         <TextField label="ID" source="id" />
         <TextField label="pdf1" source="pdf1" />
         <TextField label="pdf2" source="pdf2" />
-        <DateField source="updatedAt" label="Updated At" />{" "}
+        <DateField source="updatedAt" label="Updated At" />
+        <TextField label="userId" source="userId" />{" "}
       </Datagrid>
     </List>
   );
