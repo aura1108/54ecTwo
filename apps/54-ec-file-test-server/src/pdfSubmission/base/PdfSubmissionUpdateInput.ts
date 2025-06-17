@@ -37,7 +37,7 @@ class PdfSubmissionUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  pdf2?: string | null;
+  pdf2?: string;
 }
 
 export { PdfSubmissionUpdateInput as PdfSubmissionUpdateInput };

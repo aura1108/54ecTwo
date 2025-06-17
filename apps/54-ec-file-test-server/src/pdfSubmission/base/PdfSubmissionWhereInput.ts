@@ -14,7 +14,6 @@ import { ApiProperty } from "@nestjs/swagger";
 import { StringFilter } from "../../util/StringFilter";
 import { Type } from "class-transformer";
 import { IsOptional } from "class-validator";
-import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class PdfSubmissionWhereInput {
@@ -42,14 +41,14 @@ class PdfSubmissionWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringNullableFilter,
+    type: StringFilter,
   })
-  @Type(() => StringNullableFilter)
+  @Type(() => StringFilter)
   @IsOptional()
-  @Field(() => StringNullableFilter, {
+  @Field(() => StringFilter, {
     nullable: true,
   })
-  pdf2?: StringNullableFilter;
+  pdf2?: StringFilter;
 }
 
 export { PdfSubmissionWhereInput as PdfSubmissionWhereInput };

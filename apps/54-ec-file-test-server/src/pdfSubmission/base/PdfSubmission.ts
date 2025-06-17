@@ -11,7 +11,7 @@ https://docs.amplication.com/how-to/custom-code
   */
 import { ObjectType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsDate, IsString, MaxLength, IsOptional } from "class-validator";
+import { IsDate, IsString, MaxLength } from "class-validator";
 import { Type } from "class-transformer";
 
 @ObjectType()
@@ -42,16 +42,13 @@ class PdfSubmission {
   pdf1!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
   @MaxLength(1000)
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  pdf2!: string | null;
+  @Field(() => String)
+  pdf2!: string;
 
   @ApiProperty({
     required: true,

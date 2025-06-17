@@ -11,6 +11,6 @@ model PdfSubmission {
   createdAt DateTime @default(now())
   id        String   @id @default(cuid())
   pdf1      String
-  pdf2      String?
+  pdf2      String
   updatedAt DateTime @updatedAt
 }
